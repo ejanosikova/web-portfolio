@@ -6,118 +6,127 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Software Developer | Portfolio</title>
-		<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
-		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<div class="icon">
-							<span class="fas fa-laptop-code"></span>
-								</div>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Software Developer</h1>
-								<p>Quick learner and detail-oriented Python enthusiast</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+<head>
+	<title>Software Developer | Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+	<noscript>
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" />
+	</noscript>
+</head>
 
-				<!-- Main -->
-					<div id="main">
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<p>I came across coding with a quite big detour, but it was love at first sight. I really like that feeling when I can make something work automatically and save valuable time.</p>
-								<p>At first, I started in data area and all my coding projects were dedicated to ETL or scraping. But I had to do a lot of different things that I didn't like and I realized that I want programming and nothing else.</p>
-								<p>I'm looking for job opportunities where I can be helpful and grow.</p>
-							</article>
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<ul class="list-projects">
-								  <li><a href="#" class="list-projects-item">This portfolio website</a></li>
-								  <li><a href="#" class="list-projects-item">Custom scraper</a></li>
-								  <li><a href="#" class="list-projects-item">Tic Tac Toe</a></li>
-								</ul>
-								<p>Projects are being added continuously...</p>
-								<div class="table-responsive small">
-								<table class="table table-striped table-sm">
-								  <tbody>
-									<tr>
-									  <td>Python/Flask</td>
-									  <td>HTML/CSS</td>
-									  <td>SQL</td>
-									</tr>
-									<tr>
-									  <td>Git</td>
-									  <td>VS Code</td>
-									  <td>PyCharm</td>
-									</tr>
-									<tr>
-									  <td>ETL</td>
-									  <td>Cloud (GCP)</td>
-									  <td>REST API</td>
-									</tr>
-								  </tbody>
-								</table>
-							  </div>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								  <!-- Adding Flash messages-->
-								  {% with messages = get_flashed_messages() %}
-								  {% if messages %}
-								  {% for message in messages %}
-								  <p class="flash">{{ message }}</p>
-								  {% endfor %}
-								  {% endif %}
-								  {% endwith %}
-								<div class="contact_form">
-									{{ render_form(contact_form, novalidate=True, button_map={'send_message': 'secondary'}) }}
-								</div>
-								<ul class="icons">
-									<li><a href="https://github.com/ejanosikova" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; ej. Design: <a href="https://html5up.net">HTML5 U</a>.</p>
-					</footer>
-
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<div class="icon">
+					<span class="fas fa-laptop-code"></span>
+				</div>
 			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Software Developer</h1>
+					<p>Quick learner and detail-oriented Python enthusiast</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-		<!-- BG -->
-			<div id="bg"></div>
+		<!-- Main -->
+		<div id="main">
 
-		<!-- Scripts -->
-			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
-	</body>
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Intro</h2>
+				<p>I came across coding with a quite big detour, but it was love at first sight. I really like that
+					feeling when I can make something work automatically and save valuable time.</p>
+				<p>At first, I started in data area and all my coding projects were dedicated to ETL or scraping. But I
+					had to do a lot of different things that I didn't like and I realized that I want programming and
+					nothing else.</p>
+				<p>I'm looking for job opportunities where I can be helpful and grow.</p>
+			</article>
+
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">Work</h2>
+				<ul class="list-projects">
+					<li><a href="#" class="list-projects-item">This portfolio website</a></li>
+					<li><a href="#" class="list-projects-item">Custom scraper</a></li>
+					<li><a href="#" class="list-projects-item">Tic Tac Toe</a></li>
+				</ul>
+				<p>Projects are being added continuously...</p>
+				<div class="table-responsive small">
+					<table class="table table-striped table-sm">
+						<tbody>
+							<tr>
+								<td>Python/Flask</td>
+								<td>HTML/CSS</td>
+								<td>SQL</td>
+							</tr>
+							<tr>
+								<td>Git</td>
+								<td>VS Code</td>
+								<td>PyCharm</td>
+							</tr>
+							<tr>
+								<td>ETL</td>
+								<td>Cloud (GCP)</td>
+								<td>REST API</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<!-- Adding Flash messages-->
+				{% with messages = get_flashed_messages() %}
+				{% if messages %}
+				{% for message in messages %}
+				<p class="flash">{{ message }}</p>
+				{% endfor %}
+				{% endif %}
+				{% endwith %}
+				<div class="contact_form">
+					{{ render_form(contact_form, novalidate=True, button_map={'send_message': 'secondary'}) }}
+				</div>
+				<ul class="icons">
+					<li><a href="https://github.com/ejanosikova" target="_blank" class="icon brands fa-github"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; ej. Design: <a href="https://html5up.net">HTML5 U</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+
 </html>
